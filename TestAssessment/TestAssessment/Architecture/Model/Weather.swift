@@ -9,10 +9,41 @@ import Foundation
 
 // MARK: - WeatherData
 struct WeatherData: Codable {
-//    let cod, message : String
+    let cod : Int?
+    var message : String?
 //    let cnt: Int?
     let list: [WeatherList]?
     let city: City?
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        do {
+            cod = try container.decode(Int.self, forKey: .cod)
+        } catch DecodingError.typeMismatch {
+            let code = try container.decode(String.self, forKey: .cod)
+            cod = Int(code) ?? 0
+        }
+        do {
+            message = try container.decode(String.self, forKey: .message)
+        } catch DecodingError.typeMismatch {
+            message = try String(container.decode(Int.self, forKey: .message))
+        }
+        if cod != 200 {
+            list = nil
+            city = nil
+            return
+        }
+        do {
+            list = try container.decode([WeatherList]?.self, forKey: .list)
+        } catch DecodingError.typeMismatch {
+            list = nil
+        }
+        do {
+            city = try container.decode(City?.self, forKey: .city)
+        } catch DecodingError.typeMismatch {
+            city = nil
+        }
+    }
 }
 
 // MARK: - City
