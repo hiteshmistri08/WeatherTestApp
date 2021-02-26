@@ -9,8 +9,8 @@ import Foundation
 
 // MARK: - WeatherData
 struct WeatherData: Codable {
-    let cod, message : String
-    let cnt: Int?
+//    let cod, message : String
+//    let cnt: Int?
     let list: [WeatherList]?
     let city: City?
 }
