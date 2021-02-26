@@ -48,6 +48,9 @@ class WeatherCityListVC: UIViewController {
                 
             }
             DispatchQueue.main.async {
+                if self?.weatherCityData?.cod == "404", let message = self?.weatherCityData?.message {
+                    self?.showAlert(message: message, completion: nil)
+                }
                 self?.tableView.reloadData()
             }
         }

@@ -22,6 +22,7 @@
 		67C441B525E8B534007E3FA3 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C441B425E8B534007E3FA3 /* Weather.swift */; };
 		67C441BE25E8B650007E3FA3 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C441BD25E8B650007E3FA3 /* Webservice.swift */; };
 		67C441C625E8B908007E3FA3 /* Codabale+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C441C525E8B908007E3FA3 /* Codabale+Extension.swift */; };
+		67C441D125E8E0FF007E3FA3 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C441D025E8E0FF007E3FA3 /* UIViewController+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		67C441B425E8B534007E3FA3 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		67C441BD25E8B650007E3FA3 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
 		67C441C525E8B908007E3FA3 /* Codabale+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Codabale+Extension.swift"; sourceTree = "<group>"; };
+		67C441D025E8E0FF007E3FA3 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +219,7 @@
 			children = (
 				67C4419F25E8ABDB007E3FA3 /* UIStoryboardSegue+Extension.swift */,
 				67C441C525E8B908007E3FA3 /* Codabale+Extension.swift */,
+				67C441D025E8E0FF007E3FA3 /* UIViewController+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				67C441B525E8B534007E3FA3 /* Weather.swift in Sources */,
+				67C441D125E8E0FF007E3FA3 /* UIViewController+Extension.swift in Sources */,
 				67C4419625E8AA88007E3FA3 /* WeatherCityDetailVC.swift in Sources */,
 				67C4418E25E8AA6B007E3FA3 /* WeatherCityListVC.swift in Sources */,
 				67C4417E25E8A981007E3FA3 /* WeatherCityVC.swift in Sources */,
